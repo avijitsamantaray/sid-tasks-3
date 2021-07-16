@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+ :root {
+     --bg:rgba(27, 151, 209, 0.7);
+     --text:black;
+     --hover:white;
+     --btn:rgba(27, 151, 209, 0.9);
+     --light:white;
+     --body:white;
+     --nav:rgba(27, 151, 209, 0.9);
+}
+html {
+    scroll-behavior: smooth;
+  }
+ body{
+     background-color: var(--body);
+}
+ *{
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     color: var(--text);
+     font-family: 'Crimson Text', serif;
+     flex-wrap: wrap;
+}
+ #check{
+     display:none;
+}
+ label,.moon,.sun{
+     position: fixed;
+     z-index: 200;
+     top:20%;
+     left:1%;
+}
+ .moon,.sun{
+     font-size: 60px;
+}
+ #sun{
+     display: none;
+}
+ h1,h2,h3,h4,h5,h6{
+     text-transform: uppercase;
+}
+ .blank{
+     width: 100vw;
+     height: 30px;
+}
+ .nav{
+     position: fixed;
+     display: flex;
+     width: 100vw;
+     padding: 10px ;
+     line-height: 2;
+     text-align: center;
+     background-color: var(--nav);
+     z-index: 10;
+}
+ .nav li{
+     font-size: 1.2rem;
+     text-align: center;
+     list-style: none;
+     margin: auto;
+}
+ .nav li a{
+     color:var(--text);
+}
+ header{
+     width: 100vw;
+     height: 90vh;
+     background-color:var(--bg);
+}
+ .nav li a:hover{
+     background:var(--hover);
+     padding: 8px 10px;
+     border-radius: 50%;
+     text-decoration: none;
+}
+ .subheader{
+     position: relative;
+     top:200px;
+     height: 300px;
+     width:80vw;
+     color:var(--text);
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-content:space-around;
+}
+ .img{
+     flex-basis: 1000%;
+}
+ img{
+     width: 300px;
+     height: 300px;
+}
+ .part {
+     height: 300px;
+     width: 300px;
+     display: flex;
+     align-content: center;
+}
+ .part h1{
+     font-size: 60px;
+}
+ .main1{
+     display: flex;
+     font-size: 1.2rem;
+     margin-top: 100px;
+}
+ .card{
+     margin: auto;
+     text-align: center ;
+}
+ .btn-primary{
+     background-color:var(--btn);
+}
+ .card-body{
+     background-color: var(--light);
+}
+ .blank{
+     background-color: var(--light);
+}
+ .main2{
+     margin-top: 100px;
+     text-align: center;
+}
+ .images{
+     display: flex;
+     flex-wrap: wrap;
+     width: 90vw;
+     margin: auto;
+}
+ .images img{
+     width: 330px;
+     height: 330px;
+     margin: 30px auto;
+}
+ .main3{
+     margin-top: 100px;
+     text-align: center;
+     font-size: 1.2rem;
+}
+ .text{
+     display: flex;
+     width: 60vw;
+     color: var(--text);
+     flex-direction: column;
+     background: var(--bg);
+     text-align: center;
+     padding: 40px 60px;
+     align-items: center;
+     margin: auto;
+     perspective: 100000px;
+     box-shadow: 10px 8px rgba(196, 133, 133, 0.377);
+}
+ .text img{
+     width: 100px;
+     height: 100px;
+     margin: 4px 0px;
+}
+ .text h3,.text p{
+     margin: 4px 0px;
+}
+ .main4{
+     margin-top: 100px;
+     align-items: center;
+     text-align: center;
+     color: var(--text);
+}
+ .side{
+     margin-top: 100px;
+     width: 70vw;
+     margin: auto;
+}
+ .side input{
+     border: 1px solid var(--bg);
+     padding: 9px;
+}
+ button{
+     background:var(--btn);
+     border: var(--btn);
+     padding: 10px;
+     margin-left: -6px 
+}
+ .footer{
+     margin-top: 80px;
+     height: 100px;
+     width: 100vw;
+     background: var(--bg);
+}
+ .social{
+     width: 50vw;
+     height: 30px;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-content: space-between;
+     margin: auto;
+}
+ .social i{
+     width: 30px;
+     height: 30px;
+     font-size: 50px;
+     color: var(--text) 
+}
+ .social a i:hover{
+     color: var(--hover) 
+}
+ button:hover{
+     cursor: pointer;
+}
+ .show{
+     position: relative;
+     transform: translateY(150px);
+     opacity: 0;
+     transition: all 2s ;
+}
+ .show.active{
+     transform: translateY(0px);
+     opacity: 1;
+}
+/* responsive */
+ @media only screen and (max-width: 600px) {
+     .img{
+         display: none;
+    }
+     header{
+         height: 60vh;
+    }
+     .subheader{
+         top:100px 
+    }
+     .nav li{
+         font-size: 1rem;
+    }
+     .social i{
+         font-size: 30px;
+    }
+     .text{
+         width: 80vw;
+    }
+     .nav li a{
+         font-size: smaller;
+    }
+    .part h1{ 
+        font-size: 40px;
+
+    }
+    .moon,.sun{
+        font-size: 40px;
+
+    }
+ }
+
+ 
